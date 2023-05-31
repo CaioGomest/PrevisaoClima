@@ -33,14 +33,15 @@ input{
     border-radius: 25px;
     width: calc(100% - 70px);
     background-color: #827f7f5d;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
     padding: 10px;
 }
 .button{
     border: none;
     outline: none;
     border-radius:50px ;
-    background-color: #e6e6e65d;
+    background-color: #eae5e58e;
     padding: 5px;
     float: right;
 }
