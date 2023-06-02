@@ -43,6 +43,7 @@ function fetchDataByCoordinates(latitude, longitude) {
     if (status === google.maps.GeocoderStatus.OK) {
       if (results[0]) {
         var cityName = results[0].address_components[2].long_name;
+        document.querySelector('.input-cidade').value = cityName;
         fetchData(cityName);
       } else {
         console.log('Não foi possível obter o nome da cidade');
