@@ -19,6 +19,8 @@ async function fetchData(NameCity) {
   preencherInfos(data, NameCity);
 }
 
+
+
 function successCallback(position) {
   var latitude = position.coords.latitude;
   var longitude = position.coords.longitude;
