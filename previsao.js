@@ -19,8 +19,6 @@ async function fetchData(NameCity) {
   preencherInfos(data, NameCity);
 }
 
-
-
 function successCallback(position) {
   var latitude = position.coords.latitude;
   var longitude = position.coords.longitude;
@@ -41,7 +39,7 @@ function fetchDataByCoordinates(latitude, longitude) {
   var geocoder = new google.maps.Geocoder();
   var latlng = new google.maps.LatLng(latitude, longitude);
 
-  geocoder.geocode({ 'latLng': latlng }, function (results, status) {
+  geocoder.geocode({ 'location': latlng }, function (results, status) {
     if (status === google.maps.GeocoderStatus.OK) {
       if (results[0]) {
         var cityName = results[0].address_components[2].long_name;
